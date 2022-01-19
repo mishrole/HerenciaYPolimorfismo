@@ -26,6 +26,13 @@ class Estudiante(Persona):
     #     self.informacion()
     #     print("Calificaciones", self.calificaciones)
 
+    # Polimorfismo
+    # En Python el método del padre no está implementado
+    # Y se implementa en el hijo
+    def informacionAbstracto(self):
+        self.informacion()
+        print(f"Cursos: {self.curso} | Calificaciones : {self.calificaciones}")
+
     @classmethod
     def imprimeListaEstudiantes(cls):
         for estudiante in cls.listaEstudiantes:

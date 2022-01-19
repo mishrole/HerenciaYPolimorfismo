@@ -21,6 +21,9 @@ class Persona:
         print( "Nombre:", self.nombre )
         print( "Apellido:", self.apellido )
 
+    def informacionAbstracto(self):
+        raise NotImplementedError
+
     @classmethod
     def imprimeListaPersonas(cls):
         for persona in cls.listaPersonas:
