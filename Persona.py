@@ -20,3 +20,8 @@ class Persona:
     def informacion( self ):
         print( "Nombre:", self.nombre )
         print( "Apellido:", self.apellido )
+
+    @classmethod
+    def imprimeListaPersonas(cls):
+        for persona in cls.listaPersonas:
+            print(f"{persona.getNombre()} {persona.getApellido()}")
